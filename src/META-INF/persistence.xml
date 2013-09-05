@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="PickupLeaguePU" transaction-type="RESOURCE_LOCAL">
+    <provider>oracle.toplink.essentials.PersistenceProvider</provider>
+    <class>league.entities.User</class>
+    <class>league.entities.Game</class>
+    <class>league.entities.GameExp</class>
+    <class>league.entities.GameGroup</class>
+    <class>league.entities.GameUserOrder</class>
+    <class>league.entities.Results</class>
+    <class>league.entities.StringWrapper</class>
+    <class>league.entities.Bet</class>
+    <properties>
+      <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/dasenka"/>
+      <property name="toplink.jdbc.user" value="dasenka"/>
+      <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="toplink.jdbc.password" value="dasenka24328q"/>
+      <property name="toplink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="PickupLeagueGarenaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>oracle.toplink.essentials.PersistenceProvider</provider>
+    <class>league.entities.User</class>
+    <class>league.entities.Game</class>
+    <class>league.entities.GameExp</class>
+    <class>league.entities.GameGroup</class>
+    <class>league.entities.GameUserOrder</class>
+    <class>league.entities.Results</class>
+    <class>league.entities.StringWrapper</class>
+    <class>league.entities.Bet</class>
+    <properties>
+      <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/hlrladder"/>
+      <property name="toplink.jdbc.user" value="hlrladder"/>
+      <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="toplink.jdbc.password" value="hlrladder24328q"/>
+      <property name="toplink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
